@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="s27556"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 01:26:05 PM"/>
+        <attribute name="created" value="czI3NTU2O0xBQjExMVctMTA7MjAyMi0xMC0yNDswODo0ODowMCBBTTsyMjI1"/>
+        <attribute name="edited" value="czI3NTU2O0xBQjExMVctMTA7MjAyMi0xMC0yNDswOToyNzowOSBBTTs1OzIzNDQ="/>
+        <attribute name="edited" value="RnJpejtERVNLVE9QLU8xVDc3QUY7MjAyMi0xMS0wNjswMToyNjowNSBQTTsxOzI4MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, P, S, i, O" type="Integer" array="False" size=""/>
+            <assign variable="S" expression="0"/>
+            <input variable="N"/>
+            <input variable="P"/>
+            <for variable="i" start="1" end="P" direction="inc" step="1">
+                <input variable="O"/>
+                <assign variable="S" expression="S+O"/>
+            </for>
+            <output expression="(((N-P)*(-3))+S)/N" newline="True"/>
+            <output expression="(((N-P)*3)+S)/N" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
